@@ -10,11 +10,31 @@ a {
   text-decoration: none;
 }
 
+header,
+nav,
+h2,
+.main-visual,
+footer {
+  font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
+}
+
 header {
   width: 90%;
   padding: 15px 0;
   margin: 0 auto;
   text-align: center; /*文字を中央揃え*/
+  position: relative; /*基準位置を相対位置へ変更*/
+}
+
+.social {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+}
+
+.social i {
+  display: inline-block;
+  margin-left: 20px;
 }
 
 header .heading {
@@ -115,12 +135,12 @@ main {
   font-size: 11px;
 }
 
-.pagination{
+.pagination {
   text-align: center;
   padding-top: 50px;
 }
 
-.pagination p{
+.pagination p {
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -135,36 +155,36 @@ main {
   width: 230px;
 }
 
-.common-heading{
+.common-heading {
   border-bottom: 8px solid #f7f7f7;
   text-align: center;
   line-height: 0.6;
 }
 
-.sidebar-contents{
+.sidebar-contents {
   padding: 50px 0;
 }
 
 .popular-text,
-.categories-text{
+.categories-text {
   padding-bottom: 5px;
   border-bottom: 1px solid #f7f7f7;
   margin-bottom: 5px;
 }
 
 .popular-text:last-child,
-.categories-text:last-child{
+.categories-text:last-child {
   margin: 0;
   padding: 0;
   border: none;
 }
 
-.instagram .sidebar-contents{
+.instagram .sidebar-contents {
   display: flex;
   flex-wrap: wrap;
 }
 
-.instagram-box{
+.instagram-box {
   width: 110px;
   padding-top: 110px;
   background-size: cover;
@@ -172,32 +192,32 @@ main {
   margin-bottom: 10px;
 }
 
-.instagram-box:nth-child(odd){
+.instagram-box:nth-child(odd) {
   margin-right: 10px;
 }
 
-.instagram-box:nth-child(1){
-  background-image:url(img/airport.jpg)
+.instagram-box:nth-child(1) {
+  background-image: url(img/airport.jpg);
 }
 
-.instagram-box:nth-child(2){
-  background-image:url(img/japan.jpg)
+.instagram-box:nth-child(2) {
+  background-image: url(img/japan.jpg);
 }
 
-.instagram-box:nth-child(3){
-  background-image:url(img/snow.jpg)
+.instagram-box:nth-child(3) {
+  background-image: url(img/snow.jpg);
 }
 
-.instagram-box:nth-child(4){
-  background-image:url(img/japan2.jpg)
+.instagram-box:nth-child(4) {
+  background-image: url(img/japan2.jpg);
 }
 
-.instagram-box:nth-child(5){
-  background-image:url(img/lake.jpg)
+.instagram-box:nth-child(5) {
+  background-image: url(img/lake.jpg);
 }
 
-.instagram-box:nth-child(6){
-  background-image:url(img/road.jpg)
+.instagram-box:nth-child(6) {
+  background-image: url(img/road.jpg);
 }
 
 footer {
