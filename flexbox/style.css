@@ -1,0 +1,71 @@
+/* リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  padding: 30px 20px;
+  background-color: rgb(223, 54, 223);
+  display: flex;
+  justify-content: flex-end;
+}
+
+header > :first-child {
+  margin-right: auto;
+}
+
+.header-box {
+  flex-basis: 140px;
+  height: 70px;
+  background-color: pink;
+  margin: 0 10px;
+}
+
+main {
+  /* width: 1000px; */
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: center;
+}
+
+.main-left {
+  width: 300px;
+  background-color: limegreen;
+}
+
+.main-right {
+  max-width: 700px;
+  flex-grow: 1;
+  padding: 20px;
+  background-color: green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-right-box {
+  flex-basis: 200px;
+  height: 130px;
+  margin: 10px;
+  background-color: yellow;
+}
+
+footer {
+  /* width: 100%; */
+  padding: 20px;
+  background-color: blue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-box {
+  flex-basis: 45%;
+  max-width: 600px;
+  height: 40px;
+  margin: 10px;
+  background-color: rgb(33, 245, 224);
+}
