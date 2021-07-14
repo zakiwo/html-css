@@ -37,6 +37,10 @@ header {
   line-height: 70px;
 }
 
+.hamberger-menu {
+  display: none;
+}
+
 .main-visual {
   width: 100%;
   height: 650px;
@@ -73,7 +77,7 @@ header {
   color: #000000;
   font-weight: bold;
   position: relative;
-  margin-bottom: 8px;
+  margin: 0 auto 8 auto;
 }
 
 .title::after {
@@ -239,6 +243,11 @@ header {
 
 .youremail {
   margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.yourphone {
+  text-decoration: underline;
 }
 
 .sns {
@@ -259,4 +268,111 @@ footer {
   font-size: 16px;
   color: #fafafa;
   line-height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 50px;
+  }
+
+  .heading {
+    width: 90%;
+  }
+
+  .head-image {
+    height: 50px;
+  }
+
+  .main-visual {
+    background-image: url("img/code.png");
+  }
+
+  .hamberger-menu {
+    display: block;
+  }
+
+  .main-visual-text {
+    width: 90%;
+  }
+
+  .main-visual-text-title {
+    font-size: 40px;
+  }
+
+  .main-visual-text-body {
+    font-size: 18px;
+  }
+  .body {
+    width: 90%;
+  }
+
+  .box {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .box-item:nth-child(odd) {
+    display: none;
+  }
+
+  .box-item:nth-child(4) {
+    margin-bottom: 10px;
+  }
+
+  .strengths {
+    display: block;
+  }
+
+  .strength {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .strength:nth-child(3) {
+    margin: 0 auto;
+  }
+
+  .icon {
+    margin-top: 30px;
+  }
+
+  .profile-main {
+    display: block;
+  }
+
+  .profile-image-block {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .profile-text-block {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .contact-main {
+    display: block;
+  }
+
+  .address {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .sns {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .address-title {
+    margin-top: 20px;
+  }
+
+  .nav-list {
+    display: none;
+  }
 }
